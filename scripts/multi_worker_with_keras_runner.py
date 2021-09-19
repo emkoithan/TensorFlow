@@ -22,9 +22,9 @@ for i, node in enumerate(nodes):
     def thread_function(command):
         os.system(command)
 
-    thread = threading.Thread(target=thread_function, args=(command,))
+    thread1 = threading.Thread(target=thread_function, args=(command,))
 
 
-    thread.start()
-thread.join()
+    thread1.start()
+thread1.join()
 
